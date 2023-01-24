@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Maths Tutoring</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="img_container">
+        <img class="img" src="./images/Logo.jpg" />
+      </div>
+
+      <div class="nav-links" id="nav-links">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="register.html">REGISTER</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu"></i>
+    </nav>
+
+    <section class="text-box">
+      <h1 class="header">#1 Maths Tutoring Service</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia,
+        distinctio? Mollitia iste, libero optio vero beatae quas accusamus?
+      </p>
+      <a href="#" class="hero-btn">Read More...</a>
+    </section>
+
+    <!----------footer------->
+    <section class="footer">
+      <p>Copyright &#x00A9;2023. Developed by Themba Sibande</p>
+    </section>
+
+    <!-----------Javascript for toggle menu---------->
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
